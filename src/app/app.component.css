@@ -1,0 +1,58 @@
+/* Styling for the navigation bar */
+.navbar {
+  background-color: #333; /* Dark background color for the navbar */
+  padding: 10px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-header {
+  flex: 1;
+}
+
+.navbar-brand {
+  color: white; /* Brand name color */
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: #f8f9fa; /* Lighter color on hover */
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: white; /* Link color */
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  background-color: #555; /* Hover background color */
+  border-radius: 4px;
+}
+
+.nav-link.active {
+  background-color: #007bff; /* Active link background */
+  color: white;
+  border-radius: 4px;
+}
+
+.nav-item .active {
+  color: white;
+}

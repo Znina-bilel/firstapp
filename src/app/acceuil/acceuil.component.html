@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-jTXxLZ/c1C/pBhvLPZrMOo3hT6qTfn8/U3XGEM8dTwE7TW7LfMKl/URRqlhTXou6GZYvoRpU4FD6HVP5T5wlXw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="horizontal-menu">
+    <div class="menu-item">
+        <a class="nav-link" routerLink="/menu" routerLinkActive="active">
+            <i class="fa-solid fa-burger"></i> Menu
+        </a>
+    </div>
+    <div class="menu-item">
+        <a class="nav-link" routerLink="/boire" routerLinkActive="active">
+            <i class="fa-solid fa-glass-martini-alt"></i> Boisson
+        </a>
+    </div>
+</div>
+
+<section class="hero">
+    <img src="assets/res1.jpg" alt="Restaurant Image">
+    <div class="hero-text">
+        Bienvenue dans notre restaurant !<br> Découvrez nos plats exquis.
+    </div>
+</section>
+
+<router-outlet></router-outlet>
+
+</body>
+</html>
+

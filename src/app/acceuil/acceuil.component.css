@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.horizontal-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Espace entre Menu et Boire */
+  margin: 20px 0; /* Marges autour */
+}
+
+.menu-item {
+  font-size: 18px;
+  color: black;
+  cursor: pointer; /* Le curseur devient une main au survol */
+  transition: color 0.3s ease, transform 0.3s ease; /* Effet de transition */
+}
+
+.menu-item:hover {
+  color: rgb(243, 199, 43); /* Change la couleur au survol */
+  transform: scale(1.1); /* Agrandit légèrement l'élément au survol */
+}
+
+.menu-item i {
+  margin-right: 8px;
+}
+
+.hero {
+  position: relative; /* Positionnement relatif pour le conteneur */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute; /* Positionnement absolu pour le texte */
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  transform: translate(-50%, -50%); /* Ajuste la position pour centrer le texte */
+  color: white; /* Couleur du texte */
+  font-size: 24px; /* Taille de la police */
+  text-align: center; /* Centre le texte */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  padding: 10px; /* Espacement autour du texte */
+  border-radius: 5px; /* Coins arrondis */
+  transform: scale(0); /* Commencer à une taille de 0 */
+  opacity: 0; /* Rendre le texte invisible par défaut */
+  animation: zoomIn 2s forwards; /* Appliquer l'animation */
+}
+
+@keyframes zoomIn {
+  0% {
+      transform: translate(-50%, -50%) scale(0); /* Commencer à une taille de 0 */
+      opacity: 0; /* Invisible */
+  }
+  100% {
+      transform: translate(-50%, -50%) scale(1); /* Terminer à la taille normale */
+      opacity: 1; /* Visible */
+  }
+}
